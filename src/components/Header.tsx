@@ -27,9 +27,6 @@ const Header = () => {
             <a href="#services" className="text-foreground hover:text-primary transition-colors">
               Services
             </a>
-            <a href="#projects" className="text-foreground hover:text-primary transition-colors">
-              Projects
-            </a>
             <a href="#about" className="text-foreground hover:text-primary transition-colors">
               About Us
             </a>
@@ -67,9 +64,6 @@ const Header = () => {
               </a>
               <a href="#services" className="text-foreground hover:text-primary transition-colors">
                 Services
-              </a>
-              <a href="#projects" className="text-foreground hover:text-primary transition-colors">
-                Projects
               </a>
               <a href="#about" className="text-foreground hover:text-primary transition-colors">
                 About Us
