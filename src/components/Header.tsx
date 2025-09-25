@@ -41,9 +41,6 @@ const Header = () => {
               <Phone className="h-4 w-4" />
               <span className="text-sm">(253) 555-0123</span>
             </div>
-            <Button variant="default" className="bg-construction-primary hover:bg-construction-primary/90">
-              Free Estimate
-            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -75,9 +72,6 @@ const Header = () => {
                 <Phone className="h-4 w-4" />
                 <span className="text-sm">(253) 555-0123</span>
               </div>
-              <Button variant="default" className="bg-construction-primary hover:bg-construction-primary/90 w-fit">
-                Free Estimate
-              </Button>
             </nav>
           </div>
         )}

@@ -119,13 +119,6 @@ const ContactSection = () => {
                 />
               </div>
               
-              <Button 
-                type="submit"
-                size="lg"
-                className="w-full bg-construction-primary hover:bg-construction-primary/90 text-lg py-3"
-              >
-                Request Free Estimate
-              </Button>
               
               <p className="text-sm text-construction-neutral text-center">
                 * Required fields. We respect your privacy and will never share your information.
@@ -184,13 +177,6 @@ const ContactSection = () => {
                 Call now for immediate assistance and same-day estimates on all 
                 Gig Harbor home remodeling projects.
               </p>
-              <Button 
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-construction-secondary"
-              >
-                Call (253) 555-0123
-              </Button>
             </div>
           </div>
         </div>

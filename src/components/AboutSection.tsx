@@ -82,12 +82,6 @@ const AboutSection = () => {
                 is perfect, every timeline is met, and every expectation is exceeded.
               </p>
             </div>
-            <Button 
-              size="lg" 
-              className="mt-6 bg-construction-primary hover:bg-construction-primary/90"
-            >
-              Learn More About Us
-            </Button>
           </div>
 
           <div className="grid gap-6">

@@ -92,12 +92,6 @@ const ServicesSection = () => {
                     </li>
                   ))}
                 </ul>
-                <Button 
-                  variant="outline" 
-                  className="w-full border-construction-primary text-construction-primary hover:bg-construction-primary hover:text-white"
-                >
-                  Learn More
-                </Button>
               </div>
             </Card>
           ))}

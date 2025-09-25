@@ -29,22 +29,6 @@ const HeroSection = () => {
             renovations to complete home transformations.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button 
-              size="lg" 
-              className="bg-construction-primary hover:bg-construction-primary/90 text-white px-8 py-4 text-lg"
-            >
-              Get Free Estimate
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-construction-secondary px-8 py-4 text-lg"
-            >
-              View Our Projects
-            </Button>
-          </div>
 
           {/* Trust Indicators */}
           <div className="flex flex-wrap items-center gap-8 text-white/80">
