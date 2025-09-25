@@ -2,14 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Definition of the design system for Above & Beyond Construction and Remodeling
+All colors MUST be HSL. Professional construction theme with warm, trustworthy colors.
 */
 
 @layer base {
   :root {
+    /* Core colors - Professional construction palette */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 12% 15%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -17,26 +18,43 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Construction brand colors */
+    --primary: 25 85% 48%; /* Warm construction orange */
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 210 15% 25%; /* Professional navy blue */
+    --secondary-foreground: 0 0% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 90% 60%; /* Bright accent yellow */
+    --accent-foreground: 210 12% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 8% 85%;
+    --input: 210 8% 92%;
+    --ring: 25 85% 48%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+    
+    /* Custom construction theme colors */
+    --construction-primary: 25 85% 48%;
+    --construction-secondary: 210 15% 25%;
+    --construction-accent: 45 90% 60%;
+    --construction-neutral: 210 8% 50%;
+    --construction-light: 210 15% 96%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--construction-primary)) 0%, hsl(var(--construction-secondary)) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(var(--construction-light)) 0%, hsl(var(--background)) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(var(--construction-primary) / 0.1);
+    --shadow-medium: 0 8px 30px -8px hsl(var(--construction-primary) / 0.15);
+    --shadow-strong: 0 20px 40px -12px hsl(var(--construction-primary) / 0.25);
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,8 +74,8 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 210 15% 8%;
+    --foreground: 210 8% 92%;
 
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
@@ -65,11 +83,11 @@ All colors MUST be HSL.
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 25 85% 48%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 15% 20%;
+    --secondary-foreground: 0 0% 98%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
