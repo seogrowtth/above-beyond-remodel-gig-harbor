@@ -1,25 +1,697 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gig Harbor Home Remodeling | Above & Beyond Construction & Remodeling</title>
-    <meta name="description" content="Premier Gig Harbor home remodeling contractor specializing in kitchen remodeling, bathroom remodeling, and complete home renovations. Licensed, insured, and trusted by 500+ clients." />
-    <meta name="author" content="Above & Beyond Construction and Remodeling" />
-    <meta name="keywords" content="Gig Harbor home remodeling, Gig Harbor kitchen remodeling, Gig Harbor bathroom remodeling, Gig Harbor remodeling contractor, home renovation Gig Harbor" />
+    <meta name="description" content="Premier Gig Harbor home remodeling contractor specializing in kitchen remodeling, bathroom remodeling, and complete home renovations. Licensed, insured, and trusted by 500+ clients.">
+    <meta name="author" content="Above & Beyond Construction and Remodeling">
+    <meta name="keywords" content="Gig Harbor home remodeling, Gig Harbor kitchen remodeling, Gig Harbor bathroom remodeling, Gig Harbor remodeling contractor, home renovation Gig Harbor">
+    
+    <meta property="og:title" content="Gig Harbor Home Remodeling | Above & Beyond Construction & Remodeling">
+    <meta property="og:description" content="Transform your Gig Harbor home with expert remodeling services. Kitchen, bathroom, and complete home renovations by licensed professionals.">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1 class="logo-title">
+                        Above & Beyond
+                        <span class="logo-subtitle">Construction & Remodeling</span>
+                    </h1>
+                </div>
 
-    <meta property="og:title" content="Gig Harbor Home Remodeling | Above & Beyond Construction & Remodeling" />
-    <meta property="og:description" content="Transform your Gig Harbor home with expert remodeling services. Kitchen, bathroom, and complete home renovations by licensed professionals." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="phone-info">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <span>(253) 555-0123</span>
+                    </div>
+                </div>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <svg class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-menu" id="mobileMenu">
+                <nav class="mobile-nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="mobile-phone">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <span>(253) 555-0123</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Transform Your Gig Harbor Home with
+                    <span class="hero-accent">Expert Remodeling</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Discover premier Gig Harbor home remodeling services that enhance your living space, 
+                    boost property value, and create the home of your dreams. From kitchen and bathroom 
+                    renovations to complete home transformations.
+                </p>
+
+                <!-- Trust Indicators -->
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <svg class="icon star" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <span>4.9/5 Rating</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                        </svg>
+                        <span>Licensed & Insured</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                        </svg>
+                        <span>500+ Happy Clients</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Remodeling Services</h2>
+                <p class="section-description">
+                    From kitchen and bathroom renovations to complete home transformations, 
+                    we bring your vision to life with expert craftsmanship and attention to detail.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Kitchen Remodeling -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="src/assets/kitchen-remodel.jpg" alt="Kitchen Remodeling">
+                        <div class="service-overlay"></div>
+                        <svg class="service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Kitchen Remodeling</h3>
+                        <p class="service-description">
+                            Transform your kitchen into the heart of your home with custom cabinets, 
+                            modern appliances, and beautiful countertops.
+                        </p>
+                        <ul class="service-features">
+                            <li>Custom cabinet design and installation</li>
+                            <li>Countertop replacement and upgrades</li>
+                            <li>Modern appliance integration</li>
+                            <li>Flooring and lighting solutions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bathroom Remodeling -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="src/assets/bathroom-remodel.jpg" alt="Bathroom Remodeling">
+                        <div class="service-overlay"></div>
+                        <svg class="service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10v11M20 10v11"></path>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Bathroom Remodeling</h3>
+                        <p class="service-description">
+                            Create a spa-like retreat with luxury fixtures, modern tile work, 
+                            and efficient storage solutions.
+                        </p>
+                        <ul class="service-features">
+                            <li>Luxury shower and bathtub installation</li>
+                            <li>Vanity and storage upgrades</li>
+                            <li>Tile and flooring renovation</li>
+                            <li>Lighting and ventilation improvements</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Home Remodeling -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="src/assets/exterior-remodel.jpg" alt="Complete Home Remodeling">
+                        <div class="service-overlay"></div>
+                        <svg class="service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Complete Home Remodeling</h3>
+                        <p class="service-description">
+                            Comprehensive home renovations that enhance your entire living space 
+                            and increase your property value.
+                        </p>
+                        <ul class="service-features">
+                            <li>Open floor plan conversions</li>
+                            <li>Room additions and expansions</li>
+                            <li>Exterior and interior updates</li>
+                            <li>Energy efficiency improvements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="additional-services">
+                <h3 class="additional-title">Additional Specialized Services</h3>
+                <div class="additional-grid">
+                    <div class="additional-item">
+                        <div class="additional-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="additional-service-title">Custom Carpentry</h4>
+                        <p class="additional-description">Built-in storage, custom shelving, and trim work</p>
+                    </div>
+                    <div class="additional-item">
+                        <div class="additional-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="additional-service-title">Design Consultation</h4>
+                        <p class="additional-description">Professional design services and 3D planning</p>
+                    </div>
+                    <div class="additional-item">
+                        <div class="additional-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="additional-service-title">Plumbing & Electrical</h4>
+                        <p class="additional-description">Licensed plumbing and electrical work</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Above & Beyond?</h2>
+                <p class="section-description">
+                    With decades of experience and hundreds of satisfied customers, 
+                    we're Gig Harbor's trusted remodeling experts.
+                </p>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-number">750+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Licensed & Insured</div>
+                </div>
+            </div>
+
+            <!-- About Content -->
+            <div class="about-content">
+                <div>
+                    <h3 class="about-title">Our Mission</h3>
+                    <div class="about-description">
+                        <p>
+                            At Above & Beyond Construction & Remodeling, we believe your home should reflect your 
+                            unique style and meet your family's needs. Since 2008, we've been transforming Gig Harbor 
+                            homes with quality craftsmanship, innovative design, and exceptional customer service.
+                        </p>
+                        <p>
+                            Our team of licensed professionals brings decades of combined experience to every project, 
+                            ensuring that your remodeling dreams become reality on time and within budget.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="why-choose-us">
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="why-title">On-Time Completion</h4>
+                            <p class="why-description">We respect your time and complete projects according to agreed schedules.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="why-title">Quality Guarantee</h4>
+                            <p class="why-description">All our work comes with comprehensive warranties and quality assurance.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="why-title">Local Gig Harbor Expertise</h4>
+                            <p class="why-description">Deep understanding of local building codes and neighborhood styles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission Statement -->
+            <div class="mission">
+                <h3 class="mission-title">Our Commitment to Excellence</h3>
+                <p class="mission-text">
+                    We're committed to delivering exceptional results that exceed your expectations. 
+                    Every project is approached with meticulous attention to detail, transparent communication, 
+                    and a dedication to building lasting relationships with our clients.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ready to Start Your Project?</h2>
+                <p class="section-description">
+                    Get a free estimate and consultation for your Gig Harbor home remodeling project.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-card">
+                    <h3 class="form-title">Get Your Free Estimate</h3>
+                    <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="firstName">First Name *</label>
+                                <input class="form-input" type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="lastName">Last Name *</label>
+                                <input class="form-input" type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email *</label>
+                                <input class="form-input" type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Phone</label>
+                                <input class="form-input" type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="projectType">Project Type</label>
+                            <select class="form-select" id="projectType" name="projectType">
+                                <option value="">Select a project type</option>
+                                <option value="kitchen">Kitchen Remodeling</option>
+                                <option value="bathroom">Bathroom Remodeling</option>
+                                <option value="home">Complete Home Remodeling</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="description">Project Description</label>
+                            <textarea class="form-textarea" id="description" name="description" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button class="form-submit-btn" type="submit">
+                            Request Free Estimate
+                        </button>
+                        <p class="form-privacy">
+                            By submitting this form, you agree to our privacy policy and terms of service.
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <!-- Award Section -->
+                    <div class="award-card">
+                        <div class="award-header">
+                            <svg class="star-icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <h3 class="award-title">Award-Winning Service</h3>
+                        </div>
+                        <p class="award-description">
+                            Recognized for excellence in home remodeling and customer satisfaction.
+                        </p>
+                        <div class="rating">
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <span class="rating-text">4.9/5 (200+ reviews)</span>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info Cards -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="contact-title">Phone</h4>
+                            <div class="contact-value">(253) 555-0123</div>
+                            <p class="contact-description">Call us for immediate assistance</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="contact-title">Email</h4>
+                            <div class="contact-value">info@aboveandbeyond.com</div>
+                            <p class="contact-description">Send us your project details</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="contact-title">Service Area</h4>
+                            <div class="contact-value">Gig Harbor, WA</div>
+                            <p class="contact-description">Serving Pierce County</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="contact-title">Business Hours</h4>
+                            <div class="contact-value">Mon-Fri: 7AM-6PM</div>
+                            <p class="contact-description">Weekend consultations available</p>
+                        </div>
+                    </div>
+
+                    <!-- CTA Card -->
+                    <div class="cta-card">
+                        <h3 class="cta-title">Ready to Start Your Project?</h3>
+                        <p class="cta-description">Call now for your free consultation and estimate.</p>
+                        <a href="tel:+12535550123" class="cta-button">
+                            Call (253) 555-0123
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <h3 class="footer-logo">
+                        Above & Beyond
+                        <span class="footer-tagline">Construction & Remodeling</span>
+                    </h3>
+                    <p class="footer-description">
+                        Your trusted partner for exceptional home remodeling in Gig Harbor. 
+                        Licensed, insured, and committed to excellence.
+                    </p>
+                    <div class="footer-rating">
+                        <div class="stars">
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                        </div>
+                        <span class="rating-text">4.9/5 Rating</span>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Kitchen Remodeling</a></li>
+                        <li><a href="#services">Bathroom Remodeling</a></li>
+                        <li><a href="#services">Home Remodeling</a></li>
+                        <li><a href="#services">Custom Carpentry</a></li>
+                        <li><a href="#services">Design Consultation</a></li>
+                        <li><a href="#services">Plumbing & Electrical</a></li>
+                    </ul>
+                </div>
+
+                <!-- Service Areas -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Service Areas</h4>
+                    <ul class="footer-areas">
+                        <li>Gig Harbor</li>
+                        <li>Tacoma</li>
+                        <li>University Place</li>
+                        <li>Fox Island</li>
+                        <li>Key Peninsula</li>
+                        <li>Pierce County</li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="footer-contact">
+                        <div class="contact-row">
+                            <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span>(253) 555-0123</span>
+                        </div>
+                        <div class="contact-row">
+                            <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <span>info@aboveandbeyond.com</span>
+                        </div>
+                        <div class="contact-row">
+                            <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>Gig Harbor, WA 98335</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <div class="social-title">Follow Us</div>
+                        <div class="social-icons">
+                            <a href="#" class="social-link">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.197.233.225.437.165.676-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378 0 0-.593 2.25-.737 2.805-.267 1.074-1.006 2.42-1.496 3.235C9.312 23.627 10.641 24 12.017 24c6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001 12.017.001z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="bottom-content">
+                    <p class="copyright">
+                        © 2024 Above & Beyond Construction & Remodeling. All rights reserved.
+                    </p>
+                    <div class="bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">License #12345</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobileMenu');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Form submission
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Basic validation
+            if (!data.firstName || !data.lastName || !data.email) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(data.email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            // Simulate form submission
+            alert('Thank you for your inquiry! We will contact you soon.');
+            event.target.reset();
+        }
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 4px 20px rgba(33, 41, 52, 0.15)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(33, 41, 52, 0.1)';
+            }
+        });
+    </script>
+</body>
 </html>
